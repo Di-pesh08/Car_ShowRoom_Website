@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="Dloginpage.css">
+	<script type="text/javascript">
+		function validation()
+		 {
+			var name=document.f1.name.value;
+			var mail=document.f1.mail.value.indexOf("@");
+			var pass1=document.f1.pass1.value
+      var pass2=document.f1.pass2.value
+			{
+				if(name=="")
+				{
+					alert("plz enter your name");
+					document.f1.name.focus();
+					return false;
+				}
+				if(mail==-1)
+       {
+      	alert("not a valid email")
+      	document.f1.mail.value="";
+      	document.f1.mail.focus();
+      	return false;
+      }
+      if(pass1=="")
+ 	{
+ 	alert("please enter your password");
+    document.f1.pass1.focus();
+ 	return false;
+    }
+    if(pass2=="")
+ 	{
+ 	alert("please re-enter your password");
+    document.f1.pass2.focus();
+ 	return false;
+    }
+    if(pass1!=pass2)
+    {
+    	alert("password does not match")
+    	document.f1.pass1.value="";
+    	document.f1.pass2.value="";
+    	document.f1.pass1.focus();
+    	return false;
+      }
+    
+			}
+		}
+	</script>
+	</head>
+<body>
+	<div class="main">
+		<div class="register">
+			<h2>LOGIN HERE</h2>
+			<form class="form" name="f1" action="jaguar.html" method="post" onsubmit="return validation();">
+
+			<label>ENTER YOUR USERNAME</label>
+			<br>
+			<input type="text" class="name"  name="name" placeholder="USERNAME">
+			<br><br>
+			<label>ENTER YOUR VALID EMAIL</label>
+			<br>
+			<input type="text" class="name"  name="mail" placeholder="VALID EMAIL">
+			<br><br>
+			<label>ENTER YOUR PASSWORD</label>
+			<br>
+			<input type="PASSWORD" class="name" name="pass1" placeholder="PASSWORD">
+
+			<br><br>
+			<label>ENTER YOUR RENTER-PASSWORD</label>
+			<br>
+			<input type="PASSWORD" class="name" name="pass2" placeholder="RENTER-PASSWORD">
+			<br><br>
+			<input type="submit" id="submit" name="save" value="LOGIN">
+			<br>
+			<br>
+			<a href="Dsignup.html"><input type="button" id="signup" name="save" value="SIGNUP"></a>
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>

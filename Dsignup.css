@@ -1,0 +1,41 @@
+body
+{
+	background: url(IMAGES/f1.jpg);
+	background-size: cover;
+}
+h1
+{
+	font-size: 40px;
+	font-family: cursive;
+}
+.table
+{
+	
+	padding-top: 20px;
+	width: 450px;
+	font-family:serif;
+	margin-left: 370px;
+	margin-top: 65px;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+input
+{
+	width: 200px;
+	border-radius: 20px;
+}
+input#end
+{
+	height:40px;
+	background-color: grey;
+
+}
+input#end:hover
+{
+	
+	background-color:lightgrey;
+}

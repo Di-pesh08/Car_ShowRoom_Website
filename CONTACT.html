@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CONTACT</title>
+	<link rel="stylesheet" type="text/css" href="CONTACT.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script type="text/javascript">
+		function myfunction()
+		 {
+		
+		var name=document.getElementById('name').value;
+		var city=document.getElementById('city').value;
+		var number=document.getElementById('number').value;
+		var number1=parseInt(number);
+		var ADRESS=document.getElementById('ADRESS').value;
+		var MESSAGE=document.getElementById('MESSAGE').value;
+		
+		
+		if (name=="")
+		 {
+		 	alert("please enter your name");
+		 	document.getElementById('name').focus();
+		 	return false;
+		 }
+		 if (city=="")
+		 {
+		 	alert("please enter your city name");
+		 	document.getElementById('city').focus();
+		 	return false;
+		 }
+		 if (number=="")
+			 {
+			 	alert("plzz enter your number");
+			 	document.getElementById('number').focus();
+			 	return false;
+			 }
+			 if(isNaN(number1))
+ 	      {
+ 	        alert("please enter your numeric number!!");
+ 	        document.getElementById('number').value="";
+ 	        document.getElementById('number').focus();
+ 	             return false;
+         }
+         if (ADRESS=="")
+		 {
+		 	alert("please enter your proper adress");
+		 	document.getElementById('ADRESS').focus();
+		 	return false;
+		 }
+		 if (MESSAGE=="")
+		 {
+		 	alert("please enter your ANY MESSAGE to the company");
+		 	document.getElementById('MESSAGE').focus();
+		 	return false;
+		 }
+     }
+		
+	</script>
+</head>
+<body>
+	<div>
+		<h1 align="center">CONTACT HERE</h1>
+	</div>
+	<div class="text">
+		<form method="post" name="f1" action="jaguar.html" onsubmit="return myfunction();">
+		<h4>NAME</h4>
+		<br>
+		<input type="text" name="name" id="name"placeholder="ENTER NAME">
+		<br>
+		<br>
+		<h4>CITY</h4>
+		<br>
+		<input type="text" name="city" id="city" placeholder="ENTER CITY">
+		<br>
+		<br>
+		<h4>PHONE-NUMBER</h4>
+		<br>
+		<input type="text" name="number" id="number" minlength="10" maxlength="10" placeholder="ENTER VALID NUMBER">
+		<br>
+		<br>
+		<h4>ADRESS</h4>
+		<br>
+		<textarea rows="3" cols="35" style="border-radius: 10px; " id="ADRESS" name="ADRESS"></textarea>
+		<br>
+		<br>
+		<h4>MESSAGE</h4>
+		<br>
+		<textarea rows="3" cols="35" style="border-radius: 10px;" name="MESSAGE" id="MESSAGE"></textarea>
+		<br>
+		<br>
+		<input style="background: #b07843;" type="submit" name="" value="SEND MESSAGE!!!">
+	</form>
+	</div>
+	<div class="left">
+		<a href="https://www.google.com/"><input type="submit" name="" class="gg" value="LOGIN WITH GOOGLE"></a>
+		<br>
+		<br>
+		<a href="https://www.facebook.com/"><input type="submit" name="" class="fb" value="LOGIN WITH FACEBOOK"></a>
+		<br>
+		<br>
+		<a href="https://www.gmail.com/"><input type="submit" name="" class="gm"value="LOGIN WITH GMAIL"></a>
+		<br>
+		<br>
+		<a href="Dsecondpage.html"><input type="submit" name="" class="go"value="GO TO WEBSITE"></a>
+		<br>
+		<br>
+		<a href="Dloginpage.html"><input type="submit" name="" class="lo" value="HERE LOGIN"></a>
+		<br>
+		<br>
+		<a href="Dsignup.html"><input type="submit" name="" class="si" value="HERE SIGNUP"></a>
+		
+	</div>
+
+</body>
+</html>

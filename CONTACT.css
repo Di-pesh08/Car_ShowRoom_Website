@@ -1,0 +1,76 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	background:url(IMAGES/contact.jpg);
+	background-size: cover;
+}
+h1
+{
+	font-style: italic;
+}
+.text
+{
+  width: 50%;
+  height: 400px;
+  float: left;
+  padding-left: 200px;
+}
+.text input
+{
+  width: 250px;
+  height: 25px;
+  border-radius: 10px;	
+}
+h4
+{
+	font-size: 20px;
+	font-family:serif;
+	font-style: italic;
+}
+.left
+{
+	float:left;
+	width: 30%;
+	height: 400px;
+	padding-left: 30px;
+	padding-top: 90px;
+}
+.left input
+{
+ width: 250px;
+ height: 45px;
+ text-align: center;
+ border-radius: 10px;
+}
+.left .gg
+{
+	background:#8ed1f5;
+}
+.left .fb
+{
+	background: #0683c7;
+}
+.left .gm
+{
+	background:#b31307;
+}
+.left .go
+{
+	background: #803c48;
+}
+.left .lo
+{
+	background:#69c41a;
+}
+.left .si
+{
+	background: #724b7a;
+}
+.left input:hover
+{
+	background:white;
+}

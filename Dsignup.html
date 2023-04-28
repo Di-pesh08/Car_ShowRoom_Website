@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+	<link rel="stylesheet" type="text/css" href="Dsignup.css">
+	<script type="text/javascript">
+		function myfunction()
+		 {
+			var name= document.getElementById('name').value;
+			var name1= document.getElementById('name1').value;
+			var city= document.getElementById('city').value;
+			var number= document.getElementById('number').value;
+			var number1=parseInt(number);
+			var mail= document.getElementById('mail').value.indexOf("@");
+            var uname= document.getElementById('uname').value;
+             var pass1= document.getElementById('pass1').value;
+            var pass2= document.getElementById('pass2').value;
+           
+ 
+			if (name=="")
+			 {
+			 	alert("plzz enter your name");
+			 	document.getElementById('name').focus();
+			 	return false;
+			 }
+			 if (name1=="")
+			 {
+			 	alert("plzz enter your last name");
+			 	document.getElementById('name1').focus();
+			 	return false;
+			 }
+			 if (city=="")
+			 {
+			 	alert("plzz enter your city");
+			 	document.getElementById('city').focus();
+			 	return false;
+			 }
+			  if (number=="")
+			 {
+			 	alert("plzz enter your number");
+			 	document.getElementById('number').focus();
+			 	return false;
+			 }
+			 if(isNaN(number1))
+ 	      {
+ 	        alert("please enter your numeric number!!");
+ 	        document.getElementById('number').value="";
+ 	        document.getElementById('number').focus();
+ 	             return false;
+		}
+		  if(mail==-1)
+		
+		{
+			 alert("enter your valid email");
+			 document.getElementById('mail').value="";
+ 	         document.getElementById('mail').focus();
+ 	             return false;
+		}
+		if (uname=="")
+			 {
+			 	alert("plzz enter your username");
+			 	document.getElementById('uname').focus();
+			 	return false;
+			 }
+			  if(pass1=="")
+ 	{
+ 	alert("please enter your password");
+    document.getElementById('pass1').focus();
+ 	return false;
+    }
+    if(pass2=="")
+ 	{
+ 	alert("please re-enter your password");
+    document.getElementById('pass2').focus();
+ 	return false;
+    }
+    if(pass1!=pass2)
+    {
+    	alert("password does not match");
+    	 document.getElementById('pass1').value="";
+ 	 document.getElementById('pass2').value="";
+ 	 document.getElementById('pass1').focus();
+    	return false;
+      }
+   
+	}
+	</script>
+</head>
+<body>
+	<div class="table" style="float: left;">
+		<form name="f1" action="jaguar.html" method="post" onsubmit="return myfunction();">
+   <table border="0">
+		<tr>
+				<h1 align="center">SIGN UP HERE</h1>
+				
+			</tr>
+		<tr>
+			<td>ENTER NAME</td>
+			<td><input type="text" id="name" name="name"></td>
+		</tr>
+		<tr>
+			<td>ENTER LAST NAME</td>
+			<td><input type="text" id="name1" name="name1"></td>
+		</tr><tr>
+			<td>ENTER CITY NAME</td>
+			<td><input type="text" id="city" name="city"></td>
+		</tr>
+		<tr>
+			<td>ENTER NUMBER</td>
+			<td><input type="text" id="number" name="number" minlength="10" maxlength="10"></td>
+		</tr>
+		<tr>
+			<td>ENTER VALID E-MAIL</td>
+			<td><input type="text" id="mail" name="mail"></td>
+		</tr>
+		<tr>
+			<td>CREATE USERNAME</td>
+			<td><input type="text" id="uname" name="uname"></td>
+		</tr>
+		<tr>
+			<td>CREATE PASSWORD</td>
+			<td><input type="PASSWORD" id="pass1" name="pass1"></td>
+		</tr>
+		<tr>
+			<td>RE ENTER PASSWORD</td>
+			<td><input type="PASSWORD" id="pass2" name="pass2"></td>
+		</tr>
+		<tr>
+			<td height="20px" colspan="2"></td>
+		</tr>
+		<tr>
+			
+			<td align="CENTER"><a href="Dloginpage.html"><input id="end" type="button" name=""value="LOGIN"></a></td>
+			<td align="CENTER"><input id="end" type="submit" name="" value="SIGN UP"></td>
+		</tr>
+	</table>
+</form>
+</div>
+<marquee direction="left">
+		<img src="IMAGES/cc.gif"><img src="IMAGES/cc.gif"><img src="IMAGES/cc.gif">
+	</marquee>
+</body>
+</html>

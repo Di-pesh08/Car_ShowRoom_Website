@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script type="text/javascript">
+		function validation()
+		 {
+		 	var nm=document.f1.nm.value;
+		 	var car=document.f1.car.value;
+		 	var city=document.f1.city.value;
+		 	 if (nm=="")
+		 	  {
+		 	  	alert("please enter your name");
+		 	  	document.f1.nm.focus();
+		 	  	return false;
+		 	  }
+		 	  if (car=="")
+		 	   {
+		 	   	alert("please enter your favourite car")
+		 	   	document.f1.car.focus();
+		 	   	return false;
+		 	   }
+		 	   if (city=="")
+		 	   {
+		 	   	alert("please enter your city name")
+		 	   	document.f1.city.focus();
+		 	   	return false;
+		 	   }
+			
+		  }
+	</script>
+</head>
+<body >
+	<div class="front">
+		<h1> EXPLORE THE CARS-SHOWROOM</h1>
+		
+	</div>
+	
+	<div class="omid">
+<div class="mid">
+	<form name="f1" method="post" action="Dsecondpage.html" onsubmit="return validation();" >
+<label>ENTER NAME</label>
+<input name="nm" type="text" name="" placeholder="enter name">
+<label>ENTER FAVROUITE CAR</label>
+<input name="car" type="TEXT" name="" placeholder="enter car name" >
+<label>ENTER CITY</label>
+<input name="city" type="text" name="" placeholder="enter city">
+<br>
+<br>
+<div class="submit1">
+<input type="submit" id="submit" name="" value="ENTER HERE!!!">
+<br>
+<h4><a href="Dsecondpage.html" class="last">DIRECT GOTO WEBSITE.....<i class="fas fa-car"></i></a></h4>
+</div>
+</form>
+</div>
+</div>
+
+</body>
+</html>
